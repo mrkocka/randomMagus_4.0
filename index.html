@@ -19,6 +19,13 @@
     <title>R.a.n.d.o.m M.A.G.U.S</title>
   </head>
   <body>
+    <div class="lazyUser">
+      <div id="closebutton" class="faTimes">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <p>Kérlek válasz egy helyszínt!</p>
+      <div><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+    </div>
     <header>
       <section class="headerLogo">
         <img src="./img/magus_logo.png" alt="maguslogo" />
@@ -26,19 +33,38 @@
       </section>
     </header>
     <main>
-      <div>Választó</div>
-      <button>Lássuk</button>
+      <form id="MonsterCalc" action="">
+        <label for="location"></label>
+        <select name="location" id="location">
+          <option value="nemValasztott">Válasz helyszínt</option>
+          <option value="mersekeltovierdo">Mérsékelt övi erdő</option>
+          <option value="dzsungel">Dzsungel</option>
+          <option value="mocsar">Mocsár</option>
+          <option value="pusztasagsztyeppe">Pusztaság,sztyeppe</option>
+          <option value="Sivatag(Eszak-Ynev)">Sivatag (Észak-Ynev)</option>
+          <option value="Sivatag(Del-Ynev)">Sivatag (Dél-Ynev)</option>
+          <option value="Jegvidek">Jégvidék</option>
+          <option value="Tenger">Tenger</option>
+          <option value="Nagyoncivilizaltvidek">Nagyon civilizált vidék</option>
+          <option value="Civilizaltvidek">Civilizált vidék</option>
+          <option value="Lakottvidek">Lakott vidék</option>
+          <option value="Romvaros">Romváros</option>
+          <option value="Ediomad">Ediomad</option>
+          <option value="ElatkozottVidek">Elátkozott Vidék</option>
+          <option value="Erioni Nekropolisz">Erioni Nekropolisz</option>
+        </select>
+      </form>
+      <div id="goButton" class="button">Lássuk</div>
     </main>
     <footer>
       <div class="footerText">
         <h6>Mr. Kocka</h6>
         <a href="#">www.mrkocka.hu</a>
-       
-        
       </div>
       <div class="footerIcon">
         <i class="fa fa-info" aria-hidden="true"></i>
       </div>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
