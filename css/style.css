@@ -22,7 +22,7 @@ body {
 header {
   width: 100vw;
   height: 40vh;
-  /*background-color: blueviolet;*/
+  /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,17 +40,34 @@ header h3 {
   font-weight: 700;
   color: ghostwhite;
 }
+.creatingImg{
+  display: none;
+}
+
+.creatingImg img {
+  width: 13rem;
+}
+
+.creatingImg p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: ghostwhite;
+}
 
 /*-----------------------------------------------------Main-----------------------------------------------------*/
 
 main {
   width: 100vw;
   height: 50vh;
-  /* background-color:blue; */
+/*   background-color: blue; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#MonsterCalc{
+  display: block;
 }
 
 select {
@@ -83,13 +100,49 @@ main .button {
   cursor: pointer;
 }
 
+.page {
+  height: 2.5rem;
+  width: 13rem;
+  background-color: #8b806c;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat {
+  background-color: #8b806c;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creatingStat{
+  display: none;
+}
+
+.creatingStat div {
+
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 /*-----------------------------------------------------Footer-----------------------------------------------------*/
 
 footer {
   width: 100vw;
   height: 10vh;
   padding: 1rem;
-
+  /* background-color: burlywood; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -111,7 +164,8 @@ footer {
   cursor: pointer;
 }
 .footerText a:hover {
-  color: rgba(248, 248, 255, 0.425);
+  color: #bba14f;
+  color: #121411;
 }
 
 .fa-info {
@@ -133,6 +187,27 @@ footer {
   border-radius: 50%;
   display: flex;
   align-items: center;
+  cursor: pointer;
+}
+
+.againButton{
+  width: 8rem;
+  height: 2.6rem;
+  background-color: #8b806c;
+  color: ghostwhite;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 auto 0 auto;
+}
+
+.againButton:hover{
+  background-color: #bba14f;
+  color: #121411;
   cursor: pointer;
 }
 /*-----------------------------------------------------LazyUser-----------------------------------------------------*/
@@ -173,6 +248,7 @@ footer {
 
 .fa-arrow-down {
   font-size: 2rem;
+  padding-bottom: 0.8rem;
 }
 
 .fa-times {
@@ -273,7 +349,7 @@ footer {
   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
     rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
     rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  display: none; 
+  display: none;
   flex-direction: column;
 }
 
