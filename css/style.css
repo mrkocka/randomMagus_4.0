@@ -6,6 +6,7 @@
 }
 body {
   background-color: #121411;
+  overflow: hidden;
 }
 
 .visible {
@@ -79,6 +80,7 @@ main .button {
 
 .button:hover {
   background-color: blue;
+  cursor: pointer;
 }
 
 /*-----------------------------------------------------Footer-----------------------------------------------------*/
@@ -125,12 +127,13 @@ footer {
 .footerIcon {
   background-color: #8b806c;
   padding: 1rem;
-  margin: 0.5rem 0 0.5rem 0;
+  /*   margin: 0.2rem 0 0.2rem 0; */
   width: 3.2rem;
   height: 3.2rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 /*-----------------------------------------------------LazyUser-----------------------------------------------------*/
 
@@ -255,4 +258,38 @@ footer {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
+}
+/*-----------------------------------------------------licence-----------------------------------------------------*/
+
+.licence {
+  color: ghostwhite;
+  position: absolute;
+  left: 2vw;
+  top: 3rem;
+  background-color: #8b806c;
+  width: 95vw;
+  height: 80vh;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  display: none; 
+  flex-direction: column;
+}
+
+.licence h5 {
+  font-size: 1.5rem;
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.licence p {
+  text-align: left;
+  padding: 0 0.5rem 1rem 0.5rem;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px black;
+}
+
+/*............................................................responsiveLayout...................................*/
+
+@media screen and (min-width: 1600px) {
 }

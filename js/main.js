@@ -1,3 +1,6 @@
+//Lazy User function
+
+
 let Xbutton = document.getElementById("closebutton");
 let go = document.getElementById("goButton");
 
@@ -12,7 +15,37 @@ function close() {
   document.querySelector(".lazyUser").style.display = "none";
 }
 
+//-------------------------------------------------------------------------------------
 
+// Licence function 
+
+let XLicensButton = document.getElementById("closebuttonLicens");
+let infoButton = document.getElementById("js-ifnotButton");
+
+
+infoButton.addEventListener("click", licensOpen);
+
+function licensOpen() {
+  console.log('Super');
+  document.querySelector(".licence").style.display = "flex";
+}
+
+
+
+XLicensButton.addEventListener("click", licensClose);
+
+function licensClose(){
+  document.querySelector(".licence").style.display = "none";
+
+}
+
+
+
+
+
+
+
+//--------------------------------------------------------------------------------------
 
 //Az első generálás 
 
